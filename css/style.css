@@ -1,9 +1,13 @@
 /********** Template CSS **********/
 :root {
-    --primary: #348E38;
-    --secondary: #525368;
-    --light: #E8F5E9;
-    --dark: #0F4229;
+    --primary: #c841d1; /*color del texto de los botones cuando se le pasa el cursor por encima*/
+    --secondary: #000000; /*color del texto login cuando se le pasa el cursor por encima*/
+    --light: #ffffff;  /*color del texto login*/
+    --dark: #00ffe5; /*color del texto de los botones secundarios menu*/
+}
+
+body{
+    background-color: #4a0f6edb;
 }
 
 .back-to-top {
@@ -61,8 +65,9 @@ h6,
 }
 
 .btn-primary,
-.btn-outline-primary:hover {
-    color: var(--light);
+.btn-outline-primary:hover { /*color del texto login menu*/
+    /*color: var(--light);*/
+    color: rgb(255, 255, 255);
 }
 
 .btn-square {
@@ -102,18 +107,20 @@ h6,
     height: 80px
 }
 
-.navbar .navbar-nav .nav-link {
+.navbar .navbar-nav .nav-link { /*barra de menu*/
     margin-right: 35px;
     padding: 25px 0;
-    color: var(--dark);
+    /*color: var(--dark);*/
+    color: aqua; /*color texto botones*/
     font-size: 18px;
     font-weight: 500;
     outline: none;
 }
 
 .navbar .navbar-nav .nav-link:hover,
-.navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
+.navbar .navbar-nav .nav-link.active { /*barra de menu parte 2*/
+    /*color: var(--primary);*/
+    color: #000000; /*color del texto cuando se selecciona un boton*/
 }
 
 .navbar .dropdown-toggle::after {
@@ -132,7 +139,7 @@ h6,
     }
 
     .navbar .navbar-nav {
-        border-top: 1px solid #EEEEEE;
+        border-top: 1px solid #ffffff;
     }
 }
 
@@ -157,7 +164,7 @@ h6,
 
 
 /*** Header ***/
-.carousel-caption {
+.carousel-caption { /*sombra del slide*/
     top: 0;
     left: 0;
     right: 0;
@@ -166,7 +173,7 @@ h6,
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: rgba(15, 66, 41, .6);
+    background: rgba(0, 0, 0, 0.6);
     z-index: 1;
 }
 
@@ -176,12 +183,12 @@ h6,
 }
 
 .carousel-control-prev-icon,
-.carousel-control-next-icon {
+.carousel-control-next-icon { /*botones del slide*/
     width: 3rem;
     height: 3rem;
     border-radius: 3rem;
-    background-color: var(--primary);
-    border: 10px solid var(--primary);
+    background-color: rgb(136, 3, 136);
+    border: 10px solid rgb(225, 0, 255);
 }
 
 @media (max-width: 768px) {
@@ -198,20 +205,20 @@ h6,
     }
 }
 
-.page-header {
-    background: linear-gradient(rgba(15, 66, 41, .6), rgba(15, 66, 41, .6)), url(../img/carousel-1.jpg) center center no-repeat;
+/* .page-header {
+    background: linear-gradient(red, red, url(../img/carousel-1.jpg) center center no-repeat);
     background-size: cover;
-}
+} */
 
-.page-header .breadcrumb-item+.breadcrumb-item::before {
-    color: var(--light);
+/* .page-header .breadcrumb-item+.breadcrumb-item::before {
+    color: yellow;
 }
 
 .page-header .breadcrumb-item,
 .page-header .breadcrumb-item a {
     font-size: 18px;
-    color: var(--light);
-}
+    color: yellow;
+} */
 
 
 /*** Top Feature ***/
@@ -227,7 +234,7 @@ h6,
 /*** Facts & Quote ***/
 .facts,
 .quote {
-    background: rgba(15, 66, 41, .6);
+    background: rgba(255, 0, 247, 0.6);
 }
 
 
@@ -262,14 +269,14 @@ h6,
     transform: scale(1);
 }
 
-.service-item .service-text {
-    background: #FFFFFF;
+.service-item .service-text { /*background de cuadros en la sesion shows*/
+    background: #00ffea;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     transition: .3s;
 }
 
-.service-item:hover .service-text {
-    background: rgba(15, 66, 41, .6);
+.service-item:hover .service-text { /*color del cuadro cuando el cursor esta sobre el cuadro en shows*/
+    background: rgba(51, 244, 247, 0.6);
 }
 
 .service-item .service-text h4,
@@ -277,13 +284,13 @@ h6,
     transition: .3;
 }
 
-.service-item:hover .service-text h4 {
-    color: #FFFFFF;
-}
+/* .service-item:hover .service-text h4 {
+    color: #ff0000;
+} */
 
-.service-item:hover .service-text p {
-    color: var(--light);
-}
+/* .service-item:hover .service-text p {
+    color: red;
+} */
 
 .service-item .service-text .btn-square {
     width: 100px;
@@ -292,21 +299,21 @@ h6,
     transition: .5s;
 }
 
-.service-item:hover .service-text .btn-square {
-    background: var(--light);
-}
+/* .service-item:hover .service-text .btn-square {
+    background: yellow;
+} */
 
-.service-item .service-text .btn {
+/* .service-item .service-text .btn {
     width: 31px;
     height: 31px;
     display: inline-flex;
     align-items: center;
-    color: var(--dark);
-    background: var(--light);
+    color: red;
+    background: blue;
     white-space: nowrap;
     overflow: hidden;
     transition: .3s;
-}
+} */
 
 .service-item:hover .service-text .btn {
     width: 112px;
@@ -314,16 +321,16 @@ h6,
 
 
 /*** Project Portfolio ***/
-#portfolio-flters {
+/* #portfolio-flters {
     display: inline-block;
-    background: var(--light);
+    background: rgb(255, 0, 212);
     padding: 10px 15px;
 }
 
 #portfolio-flters li {
     display: inline-block;
     font-weight: 500;
-    color: var(--primary);
+    color: yellow;
     cursor: pointer;
     transition: .5s;
     border-bottom: 2px solid transparent;
@@ -331,9 +338,9 @@ h6,
 
 #portfolio-flters li:hover,
 #portfolio-flters li.active {
-    color: var(--dark);
-    border-color: var(--dark);
-}
+    color: black;
+    border-color: rgb(0, 255, 238);
+} */
 
 .portfolio-inner {
     position: relative;
@@ -341,14 +348,14 @@ h6,
 }
 
 .portfolio-inner::before,
-.portfolio-inner::after {
+.portfolio-inner::after { /*interaccion cuadros canciones*/
     position: absolute;
     content: "";
     width: 0;
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(15, 66, 41, .6);
+    background: rgba(81, 255, 0, 0.6); 
     transition: .5s;
 }
 
