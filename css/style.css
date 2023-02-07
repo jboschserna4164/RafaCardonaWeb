@@ -1,10 +1,4 @@
 /********** Template CSS **********/
-:root {
-    --primary: #c841d1; /*color del texto de los botones cuando se le pasa el cursor por encima*/
-    --secondary: #000000; /*color del texto login cuando se le pasa el cursor por encima*/
-    --light: #ffffff;  /*color del texto login*/
-    --dark: #00ffe5; /*color del texto de los botones secundarios menu*/
-}
 
 body{
     background-color: #4a0f6edb;
@@ -32,6 +26,7 @@ h4,
 .h4,
 .fw-medium {
     font-weight: 600 !important;
+    color: #000000;
 }
 
 h5,
@@ -232,10 +227,10 @@ h6,
 
 
 /*** Facts & Quote ***/
-.facts,
+/* .facts,
 .quote {
     background: rgba(255, 0, 247, 0.6);
-}
+} */
 
 
 /*** Service ***/
@@ -389,18 +384,22 @@ h6,
     opacity: 1;
 }
 
-.portfolio-inner .portfolio-text .btn {
-    background: var(--light);
-    color: var(--primary);
-}
+/* .portfolio-inner .portfolio-text .btn {
+    background: blue;
+    color: blue;
+} */
 
-.portfolio-inner .portfolio-text .btn:hover {
-    background: var(--primary);
-    color: var(--light);
-}
+/* .portfolio-inner .portfolio-text .btn:hover {
+    background: blue;
+    color: blue;
+} */
 
 
 /*** Team ***/
+/* .mb-0{
+    color: #000000;
+} */
+
 .team-item {
     position: relative;
     overflow: hidden;
@@ -455,7 +454,7 @@ h6,
 
 /*** Testimonial ***/
 
-.testimonial-carousel .owl-item img {
+/* .testimonial-carousel .owl-item img {
     width: 100px;
     height: 100px;
 }
@@ -484,7 +483,7 @@ h6,
 .testimonial-carousel .owl-nav .owl-next:hover {
     background: var(--primary);
     color: var(--light);
-}
+} */
 
 
 /*** Footer ***/
