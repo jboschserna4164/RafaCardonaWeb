@@ -18,6 +18,7 @@ h2,
 .h2,
 .fw-bold {
     font-weight: 700 !important;
+    color: #00ffea;
 }
 
 h3,
@@ -95,11 +96,14 @@ h6,
 .navbar.sticky-top {
     top: -100px;
     transition: .5s;
+    background-color: #000000; /*color de fondo barra menu*/
+    
 }
 
 .navbar .navbar-brand,
 .navbar a.btn {
-    height: 80px
+    height: 80px;
+    background-color: #000000; /*color fondo letra rafa cardona menu*/
 }
 
 .navbar .navbar-nav .nav-link { /*barra de menu*/
@@ -110,12 +114,14 @@ h6,
     font-size: 18px;
     font-weight: 500;
     outline: none;
+
+
 }
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active { /*barra de menu parte 2*/
     /*color: var(--primary);*/
-    color: #000000; /*color del texto cuando se selecciona un boton*/
+    color: #1e00ff; /*color del texto cuando se selecciona un boton*/
 }
 
 .navbar .dropdown-toggle::after {
@@ -134,7 +140,7 @@ h6,
     }
 
     .navbar .navbar-nav {
-        border-top: 1px solid #ffffff;
+        border-top: 1px solid #ffffff; 
     }
 }
 
@@ -147,6 +153,7 @@ h6,
         opacity: 0;
         visibility: hidden;
         transition: .5s;
+
     }
 
     .navbar .nav-item:hover .dropdown-menu {
@@ -168,7 +175,7 @@ h6,
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(140, 63, 217, 0.364);
     z-index: 1;
 }
 
@@ -182,8 +189,9 @@ h6,
     width: 3rem;
     height: 3rem;
     border-radius: 3rem;
-    background-color: rgb(136, 3, 136);
-    border: 10px solid rgb(225, 0, 255);
+    background-color: aquamarine;
+    border: 10px solid aqua;
+    
 }
 
 @media (max-width: 768px) {
@@ -217,13 +225,13 @@ h6,
 
 
 /*** Top Feature ***/
-@media (min-width: 991.98px) {
+/* @media (min-width: 991.98px) {
     .top-feature {
         position: relative;
         margin-top: -80px;
         z-index: 1;
     }
-}
+} */
 
 
 /*** Facts & Quote ***/
@@ -265,7 +273,7 @@ h6,
 }
 
 .service-item .service-text { /*background de cuadros en la sesion shows*/
-    background: #00ffea;
+    background: #606991;
     box-shadow: 0 0 45px rgba(0, 0, 0, .08);
     transition: .3s;
 }
@@ -405,13 +413,17 @@ h6,
     overflow: hidden;
 }
 
+p{
+    color: #FFFFFF;
+}
+
 .team-item .team-text {
     position: absolute;
     width: calc(100% - 45px);
     left: -100%;
     bottom: 45px;
     padding: 1.5rem;
-    background: #FFFFFF;
+    background: aqua;
     border-radius: 0 4px 4px 0;
     opacity: 0;
     transition: .5s;
@@ -423,13 +435,13 @@ h6,
 }
 
 .team-item .team-social .btn {
-    background: var(--light);
-    color: var(--primary);
+    background: yellow; /*color circulo de red social*/
+    color: blue; /*color red social*/
 }
 
 .team-item .team-social .btn:hover {
-    background: var(--primary);
-    color: var(--light);
+    background: green; /*color circulo de red social cursor encima*/
+    color: black; /*color red social cursor encima*/
 }
 
 .team-item .team-img .team-social {
