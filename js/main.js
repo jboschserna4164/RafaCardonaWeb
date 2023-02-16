@@ -1,3 +1,12 @@
+/*
+//addClass y removeClass
+elemento1.classList.remove('clase'); //remove
+elemento1.classList.add('clase'); //add
+*/
+
+
+
+
 (function ($) {
     "use strict";
 
