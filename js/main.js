@@ -2,7 +2,19 @@
 //addClass y removeClass
 elemento1.classList.remove('clase'); //remove
 elemento1.classList.add('clase'); //add
+
+//animate con setInterval() y setTimeout()
+let position = 0;
+function animate() {
+  position += 10;
+  elemento1.style.margin = position + 'px';
+}
+setInterval(animate,1000);  //ejecuta la función animate() de manera repetitiva en intervalos de tiempo determinados(en este caso: 1000milisegundos)
+setTimeout(animate,1000);   //ejecuta la función animate() después de un tiempo determinado(en este caso: 1000milisegundos)
+
+//
 */
+
 
 
 
