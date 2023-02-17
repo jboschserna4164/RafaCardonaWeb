@@ -1,5 +1,21 @@
-window.onload = function(){
+window.onload = init;
+var facebook, instagram, youtube, spotify;
+
+function init(){
 	var getNavi = document.getElementById('navigation');
+	facebook = document.querySelector(".iconfb");
+	instagram = document.querySelector(".iconinst");
+	youtube = document.querySelector(".iconyou");
+	spotify = document.querySelector(".iconspo");
+	facebook.addEventListener("mouseover",cambiarImagenfb);
+	instagram.addEventListener("mouseover",cambiarImageninst);
+	youtube.addEventListener("mouseover",cambiarImagenyou);
+	spotify.addEventListener("mouseover",cambiarImagenspo);
+	facebook.addEventListener("mouseleave",cambiarImagenfb2);
+	instagram.addEventListener("mouseleave",cambiarImageninst2);
+	youtube.addEventListener("mouseleave",cambiarImagenyou2);
+	spotify.addEventListener("mouseleave",cambiarImagenspo2);
+
 
 	var mobile = document.createElement("span");
 	mobile.setAttribute("id","mobile-navigation");
@@ -38,3 +54,31 @@ window.onload = function(){
 		}
 	};
 };
+
+//funciones para los iconos
+function cambiarImagenfb(){
+	this.src = "images/icons/facebook-hover.png";
+}
+function cambiarImageninst(){
+	this.src = "images/icons/instagram-hover.png";
+}
+function cambiarImagenspo(){
+	this.src = "images/icons/spotify-hover.png";
+}
+function cambiarImagenyou(){
+	this.src = "images/icons/youtube-hover.png";
+}
+function cambiarImagenfb2(){
+	this.src = "images/icons/facebook.png";
+}
+function cambiarImageninst2(){
+	this.src = "images/icons/instagram.png";
+}
+function cambiarImagenspo2(){
+	this.src = "images/icons/spotify.png";
+}
+function cambiarImagenyou2(){
+	this.src = "images/icons/youtube.png";
+}
+
+
