@@ -25,6 +25,7 @@ body {
 	margin: 0;
 	min-width: 960px;
 	padding: 0;
+	background-color:indigo;
 }
 p {
 	color: #252525;
@@ -68,7 +69,7 @@ p a:hover {
 	padding: 0 19px;
 }
 #header ul li a {
-	color: #252525;
+	color: #00d9ff;
 	display: inline-block;
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 14px;
@@ -79,7 +80,7 @@ p a:hover {
 	text-transform: uppercase;
 }
 #header ul li a:hover, #header ul li.selected a {
-	color: #0ba39c;
+	color: #ffffff;
 }
 #body {
 	margin: 0;
