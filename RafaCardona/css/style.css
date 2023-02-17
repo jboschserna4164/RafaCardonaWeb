@@ -408,3 +408,7 @@ p a:hover {
 #footer div ul li #pinterest:hover {
 	background-position: -44px -132px;
 }
+
+#image{
+	width: 100%;
+}
