@@ -224,7 +224,7 @@ p a:hover {
 	width: 100%;
 }
 #body #featured div {
-	left: 50%;
+	left: 70%;
 	margin-left: -480px;
 	margin-top: -171px;
 	padding: 0 0 0 470px;
@@ -234,19 +234,19 @@ p a:hover {
 	width: 490px;
 }
 #body #featured div h2 {
-	background: #fff;
+	background: #b200ed9c;
 	color: #000;
 	display: inline-block;
 	font-family: poller_oneregular;
-	font-size: 20px;
+	font-size: 30px;
 	font-weight: normal;
 	margin: 0 0 18px;
 	padding: 23px 27px 20px;
 	text-transform: uppercase;
 }
 #body #featured div span {
-	background: #252525;
-	color: #fff;
+	background: #3e00529c;
+	color: #ffffff;
 	display: inline-block;
 	font-size: 20px;
 	margin: 7px 0;
