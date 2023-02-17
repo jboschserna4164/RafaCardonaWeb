@@ -28,7 +28,7 @@ body {
 	background-color:indigo;
 }
 p {
-	color: #252525;
+	color: #000000;
 	line-height: 24px;
 	margin: 0;
 	padding: 0;
@@ -306,6 +306,7 @@ p a:hover {
 	display: block;
 	margin: 0;
 	padding: 33px 0 0;
+	color: #00eaff;
 }
 #body form {
 	margin: 0 auto;
