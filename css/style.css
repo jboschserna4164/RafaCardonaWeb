@@ -536,3 +536,14 @@ p{
 .copyright a:hover {
     color: var(--primary);
 }
+
+
+/* fade in y fadeo out */
+.show{
+    opacity: 1 !important;
+    transition: opacity 3000ms;
+}
+.hide{
+    opacity: 0 !important;
+    transition: opacity 3000ms;
+}
