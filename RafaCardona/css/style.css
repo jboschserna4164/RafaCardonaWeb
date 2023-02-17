@@ -379,8 +379,8 @@ p a:hover {
 	padding: 0;
 	width: 44px;
 }
+/*
 #footer div ul li a {
-	background: url(../images/icons.jpg) no-repeat 0 0;
 	display: block;
 	height: 44px;
 	margin: 0;
@@ -388,10 +388,11 @@ p a:hover {
 	text-indent: -99999px;
 	width: 44px;
 }
-#footer div ul li #twitter {
+
+#footer div ul li #instagram {
 	background-position: 0 0;
 }
-#footer div ul li #twitter:hover {
+#footer div ul li #instagram:hover {
 	background-position: -44px 0;
 }
 #footer div ul li #facebook {
@@ -400,18 +401,18 @@ p a:hover {
 #footer div ul li #facebook:hover {
 	background-position: -44px -44px;
 }
-#footer div ul li #googleplus {
+#footer div ul li #spotify {
 	background-position: 0 -88px;
 }
-#footer div ul li #googleplus:hover {
+#footer div ul li #spotify:hover {
 	background-position: -44px -88px;
 }
-#footer div ul li #pinterest {
+#footer div ul li #youtube {
 	background-position: 0 -132px;
 }
-#footer div ul li #pinterest:hover {
+#footer div ul li #youtube:hover {
 	background-position: -44px -132px;
-}
+} */
 
 #image{
 	width: 100%;
