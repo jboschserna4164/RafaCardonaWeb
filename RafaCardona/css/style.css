@@ -46,18 +46,20 @@ p a:hover {
 	text-align: center;
 	width: 960px;
 }
-#header a.logo {
+/* #header a.logo {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	width: 340px;
+} 
+#logo{
+	border: 0;
 	display: block;
 	margin: 0 auto;
 	padding: 0;
 	width: 340px;
 }
-#header a.logo img {
-	border: 0;
-	display: block;
-	margin: 0;
-	padding: 0;
-}
+*/
 #header ul {
 	margin: 0;
 	padding: 56px 0 0;
@@ -412,4 +414,17 @@ p a:hover {
 
 #image{
 	width: 100%;
+}
+
+.rafa{
+	font-size: 40px;
+	color: black;
+	font-family: poller_oneregular;
+}
+
+.div_logo{
+	display: inline-block;
+	padding: 20px;
+	border: solid;
+	background-color: rgb(0, 238, 255);
 }
