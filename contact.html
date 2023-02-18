@@ -5,9 +5,11 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Contacto - Rafa Cardona Web</title>
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
-	<script type="text/javascript" src="js/mobile.js"></script>
+	
 </head>
 <body>
 	<div id="header">
@@ -33,16 +35,77 @@
 		</ul>
 	</div>
 	<div id="body">
-		<h1><span>let's keep in touch</span></h1>
-		<form action="contact.html">
-			<input type="text" name="fname" id="fname" value="name">
-			<input type="text" name="address" id="address" value="address">
-			<input type="text" name="email" id="email" value="email">
-			<input type="text" name="phone" id="phone" value="phone number">
-			<textarea name="message" id="message">message</textarea>
-			<input type="submit" name="send" id="send" value="send">
-		</form>
+		<h1><span>Enviame un Mensaje</span></h1>
 	</div>
+		<main>
+			<form action="" class="formulario" id="formulario">
+				<!-- Grupo: Nombre -->
+				<div class="formulario__grupo" id="grupo__nombre">
+					<label for="nombre" class="formulario__label">Nombre</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="Ingrese su nombre">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El nombre solo puede contener letras
+						Tampoco puede estar vacio.
+					</p>
+				</div>
+	
+				<!-- Grupo: Correo Electronico -->
+				<div class="formulario__grupo" id="grupo__correo">
+					<label for="correo" class="formulario__label">Correo Electrónico</label>
+					<div class="formulario__grupo-input">
+						<input type="email" class="formulario__input" name="correo" id="correo" placeholder="correo@correo.com">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El correo solo puede contener letras, numeros, puntos, guiones y guion bajo.
+						Tampoco puede estar vacio.
+					</p>
+
+				</div>
+	
+				<!-- Grupo: Teléfono -->
+				<div class="formulario__grupo" id="grupo__telefono">
+					<label for="telefono" class="formulario__label">Teléfono</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input" name="telefono" id="telefono" placeholder="0000000000">
+						<i class="formulario__validacion-estado fas fa-times-circle"></i>
+					</div>
+					<p class="formulario__input-error">El telefono solo puede contener numeros y el maximo son 14 dígitos.
+						Tampoco puede estar vacio.
+					</p>
+				</div>
+				<!-- Grupo: Mensaje -->
+				<div class="formulario__grupo" id="grupo__nombre">
+					<label for="nombre" class="formulario__label">Mensaje</label>
+					<div class="formulario__grupo-input">
+						<input type="text" class="formulario__input">
+					</div>
+				</div>
+
+				<!-- Grupo: Terminos y Condiciones -->
+				<div class="formulario__grupo" id="grupo__terminos">
+					<label class="formulario__label">
+						<input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+						Acepto los Terminos y Condiciones
+					</label>
+				</div>
+	
+				<div class="formulario__mensaje" id="formulario__mensaje">
+					<p><i class="fas fa-exclamation-triangle"></i> <b>Error:</b> Por favor rellena los campos correctamente. </p>
+				</div>
+	
+				<div class="formulario__grupo formulario__grupo-btn-enviar">
+					<button type="submit" class="formulario__btn">Enviar</button>
+					<p class="formulario__mensaje-exito" id="formulario__mensaje-exito">Mensaje enviado exitosamente!</p>
+				</div>
+				
+			</form>
+		</main>
+		<script src="js/mobile.js"></script>
+		<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	
+
 	<div id="footer">
 		<div>
 			<p>&copy; 2023 by Mustacchio. All rights reserved.</p>
