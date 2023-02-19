@@ -17,7 +17,11 @@
 }
 
 body {
-	background: #fff;
+	background-image: url('../images/fondorafa3.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-size: 100% 100%;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	font-weight: normal;
@@ -183,8 +187,7 @@ p a:hover {
 	width: 500px;
 }
 #body div ul li div h3 {
-	background-color: #000000;
-	color: #1900ff;
+	color: #00c8ff;
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 25px;
 	font-weight: normal;
@@ -199,7 +202,7 @@ p a:hover {
 	font-family: "Arial Black", Gadget, sans-serif;
 	padding: 2px 20px 2px;
 	font-size: 20px;
-	color: rgb(0, 0, 0);
+	color: rgba(0, 0, 0, 0.984);
 }
 #body div ul li div h4 {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -310,7 +313,7 @@ p a:hover {
 	display: block;
 	margin: 0;
 	padding: 0;
-	opacity: .8;
+	opacity: .9;
 	transition: 0.5s ease-in-out;
 }
 #body > ul li a:hover img {
@@ -434,7 +437,7 @@ p a:hover {
 
 .rafa{
 	font-size: 40px;
-	color: black;
+	color: rgb(161, 159, 32);
 	font-family: poller_oneregular;
 }
 
@@ -600,52 +603,4 @@ main {
 		width: 100%;
 	}
 }
-* {
-    margin: 0;
-    padding: 0;
-    font-family: lato;
-}
 
-h2 {
-    text-align: center;
-    font-size: 2rem;
-    padding-top: 50px;
-}
-
-.slider-frame {
-	width: 1280px;
-    height: auto;
-	margin:50px auto 0;
-	overflow: hidden;
-}
-
-.slider-frame ul {
-	display: flex;
-	padding: 50;
-	width: 400%;
-	
-	animation: slide 20s infinite alternate ease-in-out;
-}
-
-.slider-frame li {
-	width: 100%;
-	list-style: none;
-}
-
-.slider-frame img {
-	width: 100%;
-}
-
-@keyframes slide {
-	0% {margin-left: 0;}
-	20% {margin-left: 0;}
-	
-	25% {margin-left: -100%;}
-	45% {margin-left: -100%;}
-	
-	50% {margin-left: -200%;}
-	70% {margin-left: -200%;}
-	
-	75% {margin-left: -300%;}
-	100% {margin-left: -300%;}
-}
