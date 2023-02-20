@@ -149,12 +149,12 @@ p a:hover {
 	margin: 0 0 30px;
 }
 #body div ul {
-	margin: 0;
+	margin: auto;
 	padding: 24px 10px 0;
-	width: 940px;
+	width: 500px;
 }
 #body div ul li {
-	border: 2px solid #1a1a1a;
+	border: 5px solid black;
 	display: block;
 	list-style: none;
 	margin: 0 0 13px;
@@ -162,12 +162,12 @@ p a:hover {
 	padding: 0;
 }
 #body div ul li .figure {
-	border-right: 2px solid #1a1a1a;
-	float: left;
+	border: 3px solid #ff0000;
 	margin: 0;
 	padding: 0;
 	width: 435px;
 	height: 250px;
+	margin-top: 20px;
 }
 /* #body div ul li img {
 	border: 0;
@@ -181,12 +181,14 @@ p a:hover {
 	opacity: 1;
 } */
 #body div ul li div {
-	float: left;
-	margin: 0;
-	padding: 30px 0 20px;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+	padding: 0 0 30px;
 	width: 500px;
 }
 #body div ul li div h3 {
+	background-color: #010010;
 	color: #00c8ff;
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 25px;
