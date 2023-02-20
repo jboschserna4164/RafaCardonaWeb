@@ -232,6 +232,7 @@ p a:hover {
 	padding: 0;
 	position: relative;
 	width: 100%;
+	border: 5px solid black;
 }
 #body #featured img {
 	border: 0;
@@ -262,6 +263,7 @@ p a:hover {
 	text-transform: uppercase;
 }
 #body #featured div span {
+	width: 400px;
 	background: #3e00529c;
 	color: #ffffff;
 	display: inline-block;
@@ -430,10 +432,52 @@ p a:hover {
 #footer div ul li #youtube:hover {
 	background-position: -44px -132px;
 } */
-
-#image{
+/* *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+#body div#contenedorCarrusel{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border: 5px solid black;
+	height: 40rem;
+	overflow: hidden;
+}
+.itemcarrusel{
+	border: 1px solid black;
+	height: 40rem;
+	width: 100%;
+	position: relative;
+}
+.tarjetacarrusel{
+	background-color: #5cb8c0;
+	height: 100%;
 	width: 100%;
 }
+.flechascarrusel{
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+}
+a{
+	text-decoration: none;
+}
+#icon{
+	color: white;
+	font-size: 30px;
+} */
+#image{
+	width: 100%;
+	height: 100%;
+}
+
 
 .rafa{
 	font-size: 40px;
@@ -603,4 +647,43 @@ main {
 		width: 100%;
 	}
 }
+
+/*slider*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.slider{
+	width: 100%;
+	height: 700px;
+	overflow: hidden;
+}
+.slider ul{
+	display: flex;
+	animation: cambio 20s infinite alternate linear;
+	width: 400%;
+}
+.slider li{
+	width: 100%;
+	list-style: none;
+}
+.slider img{
+	width: 100%;
+	height: 100%;
+}
+@keyframes cambio {
+	0%{margin-left: 0;}
+	20%{margin-left: 0;}
+
+	25%{margin-left: -100%;}
+	45%{margin-left: -100%;}
+
+	50%{margin-left: -200%;}
+	70%{margin-left: -200%;}
+
+	75%{margin-left: -300%;}
+	100%{margin-left: -300%;}
+}
+
 
