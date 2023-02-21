@@ -1,9 +1,11 @@
 window.onload = init;
 var facebook, instagram, youtube, spotify;
+let IMAGENES,TIEMPO_INTERVALO_MILESIMAS_SEG,botonRetroceder,botonAvanzar,imagen,intervalo;
+let posicionActual = 0;
 
 
 function init(){
-	var getNavi = document.getElementById('navigation');
+	//footer iconos
 	facebook = document.querySelector(".iconfb");
 	instagram = document.querySelector(".iconinst");
 	youtube = document.querySelector(".iconyou");
@@ -16,6 +18,21 @@ function init(){
 	instagram.addEventListener("mouseleave",cambiarImageninst2);
 	youtube.addEventListener("mouseleave",cambiarImagenyou2);
 	spotify.addEventListener("mouseleave",cambiarImagenspo2);
+
+ 	//slider
+	
+	IMAGENES = ['images/portada1.jpeg','images/portada2.jpeg','images/portada3.jpeg','images/portada4.jpeg'];
+	TIEMPO_INTERVALO_MILESIMAS_SEG = 4000;
+	botonRetroceder = document.querySelector('#retroceder');
+	botonAvanzar = document.querySelector('#avanzar');
+	imagen = document.querySelector('#imagen');
+	botonAvanzar.addEventListener('click', pasarFoto);
+	botonRetroceder.addEventListener('click', retrocederFoto);
+	renderizarImagen();
+
+	
+
+	var getNavi = document.getElementById('navigation');
 
 
 	var mobile = document.createElement("span");
@@ -56,7 +73,8 @@ function init(){
 	};
 };
 
-//funciones para los iconos
+//funciones footer iconos
+//--------------------------------------------------
 function cambiarImagenfb(){
 	this.src = "images/icons/facebook-hover.png";
 }
@@ -81,6 +99,47 @@ function cambiarImagenspo2(){
 function cambiarImagenyou2(){
 	this.src = "images/icons/youtube.png";
 }
+//-----------------------------------------------
+
+
+//funciones slider
+//-------------------------------------------------
+function pasarFoto() {
+	if (posicionActual >= IMAGENES.length - 1) {
+		posicionActual = 0;
+	} else {
+		posicionActual++;
+	}
+	renderizarImagen();
+}
+function retrocederFoto() {
+	if (posicionActual <= 0) {
+		posicionActual = IMAGENES.length - 1;
+	} else {
+		posicionActual--;
+	}
+	renderizarImagen();
+}
+function renderizarImagen() {
+	imagen.style.backgroundImage = `url(${IMAGENES[posicionActual]})`;
+}
+function playIntervalo() {
+	intervalo = setInterval(pasarFoto, TIEMPO_INTERVALO_MILESIMAS_SEG);
+	// Desactivamos los botones de control
+	botonAvanzar.setAttribute('disabled', true);
+	botonRetroceder.setAttribute('disabled', true);
+}
+function stopIntervalo() {
+    clearInterval(intervalo);
+    // Activamos los botones de control
+    botonAvanzar.removeAttribute('disabled');
+    botonRetroceder.removeAttribute('disabled');
+}
+//-----------------------------------------------------------------------------
+
+
+
+
 const formulario = document.getElementById('formulario');
 const inputs = document.querySelectorAll('#formulario input');
 
