@@ -20,7 +20,6 @@ function init(){
 	spotify.addEventListener("mouseleave",cambiarImagenspo2);
 
  	//slider
-	
 	IMAGENES = ['images/portada1.jpeg','images/portada2.jpeg','images/portada3.jpeg','images/portada4.jpeg'];
 	TIEMPO_INTERVALO_MILESIMAS_SEG = 4000;
 	botonRetroceder = document.querySelector('#retroceder');
@@ -29,6 +28,7 @@ function init(){
 	botonAvanzar.addEventListener('click', pasarFoto);
 	botonRetroceder.addEventListener('click', retrocederFoto);
 	renderizarImagen();
+	playIntervalo();
 
 	
 
@@ -125,15 +125,9 @@ function renderizarImagen() {
 }
 function playIntervalo() {
 	intervalo = setInterval(pasarFoto, TIEMPO_INTERVALO_MILESIMAS_SEG);
-	// Desactivamos los botones de control
-	botonAvanzar.setAttribute('disabled', true);
-	botonRetroceder.setAttribute('disabled', true);
 }
 function stopIntervalo() {
     clearInterval(intervalo);
-    // Activamos los botones de control
-    botonAvanzar.removeAttribute('disabled');
-    botonRetroceder.removeAttribute('disabled');
 }
 //-----------------------------------------------------------------------------
 
