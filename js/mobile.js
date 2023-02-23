@@ -24,7 +24,7 @@ function init(){
 	TIEMPO_INTERVALO_MILESIMAS_SEG = 4000;
 	botonRetroceder = document.querySelector('#retroceder');
 	botonAvanzar = document.querySelector('#avanzar');
-	imagen = document.querySelector('#imagen');
+	imagen = document.querySelector('#imagencar');
 	botonAvanzar.addEventListener('click', pasarFoto);
 	botonRetroceder.addEventListener('click', retrocederFoto);
 	renderizarImagen();

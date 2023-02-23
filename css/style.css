@@ -675,19 +675,21 @@ main {
 	  display: flex; */
 	margin: 0;
 	padding: 0;
-	width: 85%;
-	border: 5px solid black;
-	height: 600px;
+	width: 75%;
+	border: 5px solid rgb(0, 0, 0);
+	height: 700px;
 	overflow: hidden;
 	margin-bottom: 10%;
-	margin-left: 7.5%;
+	margin-left: 12%;
 	position: relative;
 }
 
-#imagen {
+#imagencar {
 	width: 100%;
 	height: 100%;
+	background-repeat: no-repeat;
 	background-size: cover;
+	background-size: 100% 100%;
 }
 
 .flechas {
@@ -715,7 +717,7 @@ main {
 }
 
 .btn {
-	padding: 1% 1% 1% 1%;
+	padding: 0.5% 1% 0.5% 1%;
 	background-color: aqua;
 	cursor: pointer;
 	font-size: 20px;
