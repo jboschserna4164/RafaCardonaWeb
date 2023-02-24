@@ -37,8 +37,11 @@ body {
 }
 
 #btn_enviar_registrar {
-  margin-left: 160px;
+  height: 40px;
   margin-top: 25px;
+  color: rgb(0, 0, 0);
+  width: 210px;
+  margin-bottom: 5%;
 }
 
 body,
