@@ -710,7 +710,7 @@ main {
 
 .btn {
 	padding: 0.5% 1% 0.5% 1%;
-	background-color: aqua;
+	background-color: rgb(255, 255, 255);
 	cursor: pointer;
 	font-size: 20px;
 }
