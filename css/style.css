@@ -412,20 +412,20 @@ p {
 	margin: 0;
 	padding: 36px 0 42px;
 }
-
 #footer div {
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
-	width: 960px;
+	width: 1160px;
 }
-
 #footer div p {
 	color: #fff;
 	float: left;
-	line-height: 44px;
-	margin: 0 0 0 10px;
+	margin: 0 0 0 20px;
 	padding: 0;
+}
+#footer div p a{
+	text-decoration: none;
 }
 
 #footer div ul {
@@ -693,7 +693,7 @@ main {
 
 .btn {
 	padding: 0.5% 1% 0.5% 1%;
-	background-color: rgb(255, 255, 255);
+	background-color: aqua;
 	cursor: pointer;
 	font-size: 20px;
 }
