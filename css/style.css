@@ -416,12 +416,12 @@ p {
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 0;
-	width: 1160px;
+	width: 100%;
 }
 #footer div p {
 	color: #fff;
 	float: left;
-	margin: 0 0 0 20px;
+	margin: 0 0 0 5%;
 	padding: 0;
 	padding-top: 1%;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -437,7 +437,8 @@ p {
 	margin: 0;
 	overflow: hidden;
 	padding: 0;
-	width: 256px;
+	width: 22%;
+	margin-right: 8%;
 }
 
 #footer div ul li {

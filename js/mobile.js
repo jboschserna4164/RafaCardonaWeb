@@ -1,5 +1,5 @@
 window.onload = init;
-var facebook, instagram, youtube, spotify;
+var facebook, instagram, youtube, spotify, whatsapp;
 let IMAGENES,TIEMPO_INTERVALO_MILESIMAS_SEG,botonRetroceder,botonAvanzar,imagen,intervalo;
 let posicionActual = 0;
 
@@ -10,14 +10,17 @@ function init(){
 	instagram = document.querySelector(".iconinst");
 	youtube = document.querySelector(".iconyou");
 	spotify = document.querySelector(".iconspo");
+	whatsapp = document.querySelector(".iconwha");
 	facebook.addEventListener("mouseover",cambiarImagenfb);
 	instagram.addEventListener("mouseover",cambiarImageninst);
 	youtube.addEventListener("mouseover",cambiarImagenyou);
 	spotify.addEventListener("mouseover",cambiarImagenspo);
+	whatsapp.addEventListener("mouseover",cambiarImagenwha);
 	facebook.addEventListener("mouseleave",cambiarImagenfb2);
 	instagram.addEventListener("mouseleave",cambiarImageninst2);
 	youtube.addEventListener("mouseleave",cambiarImagenyou2);
 	spotify.addEventListener("mouseleave",cambiarImagenspo2);
+	whatsapp.addEventListener("mouseleave",cambiarImagenwha2);
 
  	//slider
 	IMAGENES = ['images/portada1.jpeg','images/portada2.jpeg','images/portada3.jpeg','images/portada4.jpeg'];
@@ -87,6 +90,9 @@ function cambiarImagenspo(){
 function cambiarImagenyou(){
 	this.src = "images/icons/youtube-hover.png";
 }
+function cambiarImagenwha(){
+	this.src = "images/icons/whatsapp-hover.png";
+}
 function cambiarImagenfb2(){
 	this.src = "images/icons/facebook.png";
 }
@@ -98,6 +104,9 @@ function cambiarImagenspo2(){
 }
 function cambiarImagenyou2(){
 	this.src = "images/icons/youtube.png";
+}
+function cambiarImagenwha2(){
+	this.src = "images/icons/whatsapp.png";
 }
 //-----------------------------------------------
 
