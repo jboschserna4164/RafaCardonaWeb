@@ -423,9 +423,12 @@ p {
 	float: left;
 	margin: 0 0 0 20px;
 	padding: 0;
+	padding-top: 1%;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 #footer div p a{
 	text-decoration: none;
+	color: #00d9ff;
 }
 
 #footer div ul {
@@ -476,8 +479,9 @@ p {
 .div_logo {
 	display: inline-block;
 	padding: 20px;
-	border: solid;
+	border: 3px solid rgb(29, 29, 30);
 	background-color: rgb(0, 238, 255);
+	border-radius: 5px;
 }
 
 main {
@@ -652,7 +656,7 @@ main {
 	padding: 0;
 	width: 75%;
 	border: 5px solid rgb(0, 0, 0);
-	height: 700px;
+	height: 500px;
 	overflow: hidden;
 	margin-bottom: 6%;
 	margin-left: 12%;
