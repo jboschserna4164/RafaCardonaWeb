@@ -3,7 +3,8 @@ body {
 	min-width: 0;
 }
 #header {
-	padding: 20px 0;
+	padding: 0;
+	padding-bottom: 20px;
 	position: relative;
 	width: 100%;
 }
@@ -12,6 +13,13 @@ body {
 }
 #header a.logo img {
 	width: 100%;
+}
+.div_logo {
+	display: inline-block;
+	padding: 20px;
+	border: 3px solid rgb(29, 29, 30);
+	background-color: rgb(0, 238, 255);
+	border-radius: 5px;
 }
 #mobile-navigation {
 	background: url(../images/mobile-menu.png) no-repeat 0 0;
@@ -82,7 +90,24 @@ body {
 #body {
 	width: 100%;
 }
+/* #bodyabout{
+	width: 100%;
+	height: 80px;
+}
+#bodyabout h1 {
+	padding-top: 20px;
+	display: block;
+	font-size: 20px;
+	margin: 0 auto;
+	width: 90%;
+}
+#bodyabout h1 span {
+	display: block;
+	padding: 3%;
+	width: 94%;
+} */
 #body h1 {
+	padding-top: 20px;
 	display: block;
 	font-size: 20px;
 	margin: 0 auto;
@@ -224,4 +249,17 @@ body {
 	float: none;
 	margin: 0 auto;
 	width: 326px;
+}
+.carousel {
+	/*   max-width: 800px;
+	  margin: 0 auto;
+	  display: flex; */
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	border: 5px solid rgb(0, 0, 0);
+	height: 300px;
+	overflow: hidden;
+	margin-bottom: 6%;
+	position: relative;
 }

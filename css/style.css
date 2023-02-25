@@ -464,6 +464,8 @@ p {
 	font-size: 20px;
 	text-transform: uppercase;
 	background-color: #00eaff;
+	border: 3px solid black;
+	border-radius: 10px;
 }
 
 #image {
@@ -657,7 +659,7 @@ main {
 	padding: 0;
 	width: 75%;
 	border: 5px solid rgb(0, 0, 0);
-	height: 500px;
+	height: 600px;
 	overflow: hidden;
 	margin-bottom: 6%;
 	margin-left: 12%;
