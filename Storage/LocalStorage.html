@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="css/login.css">
+   
+
+    <script>
+        let pst, frm;
+        window.onload=function(){
+            frm= document.getElementById("form-demo");
+            pst = new pristine(frm);
+
+            frm.addEventListener('submit',function (e){
+                e.preventDefault();
+                if (pst.validate())
+                {
+                    ProcesarDatos()
+                }
+                else{
+                    fmr.classList.add("was-validated");
+                }
+                
+            });
+            frm.addEventListener('reset',function(e){
+                frm.classList.remove("was validated");
+            });
+        };
+
+        function ProcesarDatos(){
+            fetch('scripts/script.php',{
+                method: 'post',
+                body:new FormData(frm)
+            })
+            .then(function(response) {
+                 return response.json();
+            })
+            .then(function(json) {
+                 console.log(json);
+            })
+            .catch(function(err) {
+            });
+        }
+        function guardarLocal(json){
+            localStorage.setItem("usuario",JSON,stringify(json));
+            location.href="login.html";
+        }
+    </script>
+</head>
+<body>
+    <div class ="form-group">
+        <label> Nombre </label>
+        <input type="text" id="Nombre" class="form control" required />
+    </div>
+
+    <div class ="form-group">
+        <label> Apellido </label>
+        <input type="text" id="Apellido" class="form control" required />
+    </div>
+    
+    <div class ="form-group">
+        <label> Celular </label>
+        <input type="text" id="Celular" class="form control" required />
+    </div>
+
+    <div class ="form-group">
+        <label> correo electronico </label>
+        <input type="text" id="correo electronico" class="form control" required />
+    </div>
+
+    <div class ="form-group">
+        <label> password </label>
+        <input type="text" id="clave1" class="form control" required />
+    </div>
+
+    <div class ="form-group">
+        <label> Validar password</label>
+        <input type="text" id="clave2" class="form control" required />
+    </div>
+
+    <div class ="form-group">
+        <select required id="ciudad" name="ciudad" class="custom-select">
+            <option value="">Ciudad</option>
+            <option value="01">Medellin</option>
+            <option value="02">Bogota</option>
+            <option value="03">Cartagena</option>
+            <option value="04">Cali</option>
+            <option value="05">Santa Marta</option>
+        </select>
+        <input type="text" id="nombre" class="form control" required />
+    </div>
+
+ <script src= "C:\Users\Usuario\Desktop\Escritorio\UNIVERSIDAD\RafaCardonaWeb\js\vendor"></script>
+</body>
+<form id= "form-demo" novalidate method ="post"></form>
+
+</html>
