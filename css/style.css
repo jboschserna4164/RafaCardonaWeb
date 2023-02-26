@@ -468,6 +468,15 @@ p {
 	border-radius: 10px;
 }
 
+.txtaboutme{
+	color: rgb(215, 203, 203);
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	background-color: black;
+	padding: 5% 5% 5% 5%;
+	border: 3px solid white;
+	border-radius: 10px;
+}
+
 #image {
 	width: 100%;
 	height: 100%;

@@ -2,6 +2,7 @@ window.onload = init;
 var facebook, instagram, youtube, spotify, whatsapp;
 let IMAGENES,TIEMPO_INTERVALO_MILESIMAS_SEG,botonRetroceder,botonAvanzar,imagen,intervalo;
 let posicionActual = 0;
+let btninicio, btnabout, btngaleria, btncanciones, btncontacto, btnlogin;
 
 
 function init(){
@@ -32,6 +33,32 @@ function init(){
 	botonRetroceder.addEventListener('click', retrocederFoto);
 	renderizarImagen();
 	playIntervalo();
+
+	//menu header
+	btninicio = document.getElementById("btn1");
+    btnabout = document.getElementById("btn2");
+    btngaleria = document.getElementById("btn3");
+    btncanciones = document.getElementById("btn4");
+    btncontacto = document.getElementById("btn5");
+    btnlogin = document.getElementById("btn6");
+	btninicio.addEventListener("click", function () {
+        btninicio.href = "index.html";
+    })
+    btnabout.addEventListener("click", function () {
+        this.href = "about.html";
+    })
+    btngaleria.addEventListener("click", function () {
+        this.href = "gallery.html";
+    })
+    btncanciones.addEventListener("click", function () {
+        this.href = "canciones.html";
+    })
+    btncontacto.addEventListener("click", function () {
+        this.href = "contact.html";
+    })
+    btnlogin.addEventListener("click", function () {
+        this.href = "login.html";
+    })
 
 	
 
