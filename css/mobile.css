@@ -60,7 +60,9 @@ body {
 	line-height: 49px;
 	padding: 0 15px;
 	text-align: left;
+	border-radius: 0px;
 }
+
 #header ul li a:hover, #header ul li.selected a {
 	background: rgba(0, 0, 0, 0.9);
 	color: #fff;

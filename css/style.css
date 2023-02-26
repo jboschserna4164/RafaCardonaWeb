@@ -65,6 +65,7 @@ p {
 #header ul {
 	margin: 0;
 	padding: 56px 0 0;
+
 }
 
 #header ul li {
@@ -75,15 +76,17 @@ p {
 }
 
 #header ul li a {
+	background-color: #000;
 	color: #00d9ff;
 	display: inline-block;
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 14px;
 	font-weight: normal;
 	margin: 0;
-	padding: 0 0 3px;
+	padding: 10px 10px 10px 10px;
 	text-decoration: none;
 	text-transform: uppercase;
+	border-radius: 12px;
 }
 
 #header ul li a:hover,
