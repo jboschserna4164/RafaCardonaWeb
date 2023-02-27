@@ -2,7 +2,6 @@ window.onload = init;
 var facebook, instagram, youtube, spotify, whatsapp;
 let IMAGENES,TIEMPO_INTERVALO_MILESIMAS_SEG,botonRetroceder,botonAvanzar,imagen,intervalo;
 let posicionActual = 0;
-let btninicio, btnabout, btngaleria, btncanciones, btncontacto, btnlogin;
 
 
 function init(){
@@ -34,39 +33,6 @@ function init(){
 	renderizarImagen();
 	playIntervalo();
 
-	//menu header
-	btninicio = document.getElementById("btn1");
-    btnabout = document.getElementById("btn2");
-    btngaleria = document.getElementById("btn3");
-    btncanciones = document.getElementById("btn4");
-    btncontacto = document.getElementById("btn5");
-    btnlogin = document.getElementById("btn6");
-	btninicio.addEventListener("click", function () {
-        this.href = "https://jboschserna4164.github.io/RafaCardonaWeb/index.html";
-		alert(this.href);
-    })
-    btnabout.addEventListener("click", function () {
-        this.href = "https://jboschserna4164.github.io/RafaCardonaWeb/about.html";
-		alert(this.href);
-    })
-    btngaleria.addEventListener("click", function () {
-        this.href = "https://jboschserna4164.github.io/RafaCardonaWeb/gallery.html";
-		alert(this.href);
-    })
-    btncanciones.addEventListener("click", function () {
-        this.href = "https://jboschserna4164.github.io/RafaCardonaWeb/canciones.html";
-		alert(this.href);
-    })
-    btncontacto.addEventListener("click", function () {
-        this.href = "https://jboschserna4164.github.io/RafaCardonaWeb/contact.html";
-		alert(this.href);
-    })
-    btnlogin.addEventListener("click", function () {
-        this.href = "https://jboschserna4164.github.io/RafaCardonaWeb/login.html";
-		alert(this.href);
-    })
-
-	
 
 	var getNavi = document.getElementById('navigation');
 
