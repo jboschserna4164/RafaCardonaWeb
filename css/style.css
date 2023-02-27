@@ -683,6 +683,12 @@ main {
 	justify-content: space-between;
 	padding: 0;
 }
+.btncarrousel{
+	padding: 0.5% 1% 0.5% 1%;
+	background-color: aqua;
+	cursor: pointer;
+	font-size: 20px;
+}
 
 #retroceder {
 	margin-left: 1%;
