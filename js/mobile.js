@@ -42,22 +42,28 @@ function init(){
     btncontacto = document.getElementById("btn5");
     btnlogin = document.getElementById("btn6");
 	btninicio.addEventListener("click", function () {
-        btninicio.href = "index.html";
+        this.href = "https://jboschserna4164.github.io/RafaCardonaWeb/index.html";
+		alert(this.href);
     })
     btnabout.addEventListener("click", function () {
-        this.href = "about.html";
+        this.href = "https://jboschserna4164.github.io/RafaCardonaWeb/about.html";
+		alert(this.href);
     })
     btngaleria.addEventListener("click", function () {
-        this.href = "gallery.html";
+        this.href = "https://jboschserna4164.github.io/RafaCardonaWeb/gallery.html";
+		alert(this.href);
     })
     btncanciones.addEventListener("click", function () {
-        this.href = "canciones.html";
+        this.href = "https://jboschserna4164.github.io/RafaCardonaWeb/canciones.html";
+		alert(this.href);
     })
     btncontacto.addEventListener("click", function () {
-        this.href = "contact.html";
+        this.href = "https://jboschserna4164.github.io/RafaCardonaWeb/contact.html";
+		alert(this.href);
     })
     btnlogin.addEventListener("click", function () {
-        this.href = "login.html";
+        this.href = "https://jboschserna4164.github.io/RafaCardonaWeb/login.html";
+		alert(this.href);
     })
 
 	
