@@ -6,50 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
-    <link rel="stylesheet" href="css/login.css">
-   
-
-    <script>
-        let pst, frm;
-        window.onload=function(){
-            frm= document.getElementById("form-demo");
-            pst = new pristine(frm);
-
-            frm.addEventListener('submit',function (e){
-                e.preventDefault();
-                if (pst.validate())
-                {
-                    ProcesarDatos()
-                }
-                else{
-                    fmr.classList.add("was-validated");
-                }
-                
-            });
-            frm.addEventListener('reset',function(e){
-                frm.classList.remove("was validated");
-            });
-        };
-
-        function ProcesarDatos(){
-            fetch('scripts/script.php',{
-                method: 'post',
-                body:new FormData(frm)
-            })
-            .then(function(response) {
-                 return response.json();
-            })
-            .then(function(json) {
-                 console.log(json);
-            })
-            .catch(function(err) {
-            });
-        }
-        function guardarLocal(json){
-            localStorage.setItem("usuario",JSON,stringify(json));
-            location.href="login.html";
-        }
-    </script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css" media="screen and (max-width : 568px)">
+    <script src= "C:\Users\Usuario\Desktop\Escritorio\UNIVERSIDAD\RafaCardonaWeb\js\vendor\pristine.min.js"></script>
+    <script type="text/javascript" src="js/login.js"></script>
+    <script src="js/localStorage.js"></script>
 </head>
 <body>
     <div class ="form-group">
@@ -69,7 +30,7 @@
 
     <div class ="form-group">
         <label> correo electronico </label>
-        <input type="text" id="correo electronico" class="form control" required />
+        <input type="text" id="correo_electronico" class="form control" required />
     </div>
 
     <div class ="form-group">
@@ -94,8 +55,7 @@
         <input type="text" id="nombre" class="form control" required />
     </div>
 
- <script src= "C:\Users\Usuario\Desktop\Escritorio\UNIVERSIDAD\RafaCardonaWeb\js\vendor/pristine.min.js"></script>
 </body>
-<form id= "form-demo" novalidate method ="post"></form>
+</form>id= "form-demo" novalidate method ="post"></form>
 
 </html>
