@@ -335,7 +335,7 @@ p {
 	background-color: #000;
 }
 
-#body>ul li a {
+#body>ul li div {
 	color: #000;
 	display: block;
 	font-family: poller_oneregular;
@@ -348,7 +348,7 @@ p {
 	text-transform: uppercase;
 }
 
-#body>ul li a img {
+#body>ul li div img {
 	border: 2px solid #1a1a1a;
 	display: block;
 	margin: 0;
@@ -357,11 +357,11 @@ p {
 	transition: 0.5s ease-in-out;
 }
 
-#body>ul li a:hover img {
+#body>ul li div:hover img {
 	opacity: 1;
 }
 
-#body>ul li a span {
+#body>ul li div span {
 	display: block;
 	margin: 0;
 	padding: 33px 0 0;
