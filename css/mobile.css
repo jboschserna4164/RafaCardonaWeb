@@ -89,61 +89,61 @@ body {
 	top: 0;
 	width: 50px;
 }
-#body {
+.body {
 	width: 100%;
 }
-/* #bodyabout{
+/* .bodyabout{
 	width: 100%;
 	height: 80px;
 }
-#bodyabout h1 {
+.bodyabout h1 {
 	padding-top: 20px;
 	display: block;
 	font-size: 20px;
 	margin: 0 auto;
 	width: 90%;
 }
-#bodyabout h1 span {
+.bodyabout h1 span {
 	display: block;
 	padding: 3%;
 	width: 94%;
 } */
-#body h1 {
+.body h1 {
 	padding-top: 20px;
 	display: block;
 	font-size: 20px;
 	margin: 0 auto;
 	width: 90%;
 }
-#body h1 span {
+.body h1 span {
 	display: block;
 	padding: 3%;
 	width: 94%;
 }
-#body > div {
+.body > div {
 	padding: 0 5%;
 	width: 90%;
 }
-#body > div img {
+.body > div img {
 	margin: 24px 0 30px;
 	width: 98%
 }
-#body > div .article {
+.body > div .article {
 	padding: 0;
 	width: 100%;
 }
-#body > div .article h2, #body > div .article h4 {
+.body > div .article h2, .body > div .article h4 {
 	font-size: 18px;
 	font-weight: bold;
 }
-#body #featured {
+.body #featured {
 	overflow: hidden;
 	margin: 0 0 20px
 }
-#body #featured img {
+.body #featured img {
 	min-width: 960px;
 }
-#body #featured div {
+.body #featured div {
 	left: 0;
 	margin: 0;
 	padding: 0 2%;
@@ -152,87 +152,87 @@ body {
 	text-align: left;
 	width: 96%;
 }
-#body #featured div h2 {
+.body #featured div h2 {
 	font-size: 14px;
 	font-weight: normal;
 	margin: 50px 0 10px;
 	padding: 8px 5px;
 }
-#body #featured div span {
+.body #featured div span {
 	display: block;
 	font-size: 14px;
 	margin: 10px 0;
 	padding: 10px;
 }
-#body #featured div a {
+.body #featured div a {
 	font-size: 14px;
 	margin: 5px 0 0;
 	padding: 10px;
 }
-#body > ul {
+.body > ul {
 	overflow: visible;
 	padding: 0 5%;
 	width: 90%;
 }
-#body ul.gallery {
+.body ul.gallery {
 	padding: 5% 0;
 	overflow: hidden;
 	width: 100%;
 }
-#body > ul li {
+.body > ul li {
 	float: none;
 	margin: 0;
 	width: 100%;
 }
-#body ul.gallery li {
+.body ul.gallery li {
 	float: left;
 	margin: 0 0 5% 5%;
 	width: 42%;
 }
-#body > ul li a img {
+.body > ul li a img {
 	width: 98%;
 }
-#body > ul li a span {
+.body > ul li a span {
 	padding: 15px 0;
 }
-#body div ul {
+.body div ul {
 	margin: 0;
 	padding: 20px 0 0;
 	width: 100%;
 }
-#body div ul li {
+.body div ul li {
 	overflow: visible;
 	padding: 0 0 20px;
 	width: 99%;
 }
-#body div ul li .figure {
+.body div ul li .figure {
 	border: 0;
 	display: block;
 	float: none;
 	margin: 0 0 20px;
 	width: 100%;
 }
-#body div ul li .figure img {
+.body div ul li .figure img {
 	width: 100%;
 }
-#body div ul li div {
+.body div ul li div {
 	float: none;
 	padding: 0;
 	width: 100%;
 }
-#body div ul li div a.more:hover {
+.body div ul li div a.more:hover {
 	height: 14px;
 	line-height: 14px;
 }
-#body form {
+.body form {
 	width: 100%;
 }
-#body form input, #body form textarea {
+.body form input, .body form textarea {
 	margin: 0 0 20px;
 	padding: 10px;
 	width: 84%;
 }
-#body form #send {
+.body form #send {
 	padding: 10px;
 }
 #footer {

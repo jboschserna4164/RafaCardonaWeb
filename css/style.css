@@ -80,13 +80,13 @@ p {
 	color: #ffffff;
 }
 
-#body {
+.body {
 	margin: 0;
 	padding: 0 0 30px;
 	text-align: center;
 }
 
-#body h1 {
+.body h1 {
 	color: #ffffff;
 	display: inline;
 	font-family: poller_oneregular;
@@ -97,45 +97,45 @@ p {
 	text-transform: uppercase;
 }
 
-#body h1 span {
+.body h1 span {
 	background: #010101e6;
 	display: inline-block;
 	padding: 15px 28px 12px;
 }
 
-#body>div {
+.body>div {
 	margin: 0 auto;
 	padding: 0;
 	width: 960px;
 }
 
-#body>div img {
+.body>div img {
 	border: 2px solid #292929;
 	margin: 24px 0 0;
 	padding: 0;
 }
 
-#body>div .article {
+.body>div .article {
 	margin: 0 auto;
 	padding: 30px 30px 0;
 	width: 560px;
 }
 
-#body>div .article h2 {
+.body>div .article h2 {
 	font-family: "Arial Black", Gadget, sans-serif;
 	font-size: 25px;
 	font-weight: normal;
 	margin: 0 0 30px;
 }
 
-#body>div .article h3 {
+.body>div .article h3 {
 	color: #000000;
 	line-height: 24px;
 	margin: 0;
 	padding: 0;
 }
 
-#body>div .article h4 {
+.body>div .article h4 {
 	background: #252525;
 	color: #fff;
 	display: inline-block;
@@ -146,17 +146,17 @@ p {
 	padding: 8px 27px 10px;
 }
 
-#body>div .article p {
+.body>div .article p {
 	margin: 0 0 30px;
 }
 
-#body div ul {
+.body div ul {
 	margin: auto;
 	padding: 24px 10px 0;
 	width: 500px;
 }
 
-#body div ul li {
+.body div ul li {
 	background-color: #000;
 	border: 5px solid rgb(174, 0, 255);
 	display: block;
@@ -166,7 +166,7 @@ p {
 	padding: 0;
 }
 
-#body div ul li .figure {
+.body div ul li .figure {
 	border: 3px solid #00c8ff;
 	margin: 0;
 	padding: 0;
@@ -175,7 +175,7 @@ p {
 	margin-top: 20px;
 }
 
-/* #body div ul li img {
+/* .body div ul li img {
 	border: 0;
 	display: block;
 	margin: 0;
@@ -183,10 +183,10 @@ p {
 	opacity: 0.8;
 	transition: 0.5s ease-in-out;
 }
-#body div ul li .figure:hover img {
+.body div ul li .figure:hover img {
 	opacity: 1;
 } */
-#body div ul li div {
+.body div ul li div {
 	background-color: #000;
 	justify-content: center;
 	align-items: center;
@@ -195,7 +195,7 @@ p {
 	width: 500px;
 }
 
-#body div ul li div h3 {
+.body div ul li div h3 {
 	background-color: #010010;
 	color: #00c8ff;
 	font-family: "Arial Black", Gadget, sans-serif;
@@ -209,21 +209,21 @@ p {
 	text-align: center;
 }
 
-#body div ul li div h2 {
+.body div ul li div h2 {
 	font-family: "Arial Black", Gadget, sans-serif;
 	padding: 2px 20px 2px;
 	font-size: 20px;
 	color: rgba(222, 208, 208, 0.863);
 }
 
-#body div ul li div h4 {
+.body div ul li div h4 {
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	padding: 2px 20px 2px;
 	font-size: 25px;
 	color: rgb(245, 240, 240);
 }
 
-/* #body div ul li div a.more {
+/* .body div ul li div a.more {
 	background: #000;
 	color: #fff;
 	display: inline-block;
@@ -235,12 +235,12 @@ p {
 	text-decoration: none;
 	text-transform: uppercase;
 }
-#body div ul li div a.more:hover {
+.body div ul li div a.more:hover {
 	color: #252525;
 	background: #fff;
 	border: 2px solid #252525;
 } */
-#body #featured {
+.body #featured {
 	margin: 0 0 13px;
 	padding: 0;
 	position: relative;
@@ -248,7 +248,7 @@ p {
 	border: 5px solid black;
 }
 
-#body #featured img {
+.body #featured img {
 	border: 0;
 	display: block;
 	margin: 0;
@@ -256,7 +256,7 @@ p {
 	width: 100%;
 }
 
-#body #featured div {
+.body #featured div {
 	left: 60%;
 	margin-left: -480px;
 	margin-top: -171px;
@@ -267,7 +267,7 @@ p {
 	width: 490px;
 }
 
-#body #featured div h2 {
+.body #featured div h2 {
 	background: #b200ed9c;
 	color: #000;
 	display: inline-block;
@@ -279,7 +279,7 @@ p {
 	text-transform: uppercase;
 }
 
-#body #featured div span {
+.body #featured div span {
 	width: 400px;
 	background: #3e00529c;
 	color: #ffffff;
@@ -289,7 +289,7 @@ p {
 	padding: 12px 27px;
 }
 
-#body #featured div a {
+.body #featured div a {
 	background: #0ba39c;
 	color: #fff;
 	display: inline-block;
@@ -301,18 +301,18 @@ p {
 	text-transform: uppercase;
 }
 
-#body #featured div a:hover {
+.body #featured div a:hover {
 	background: #1fc3bc;
 }
 
-#body>ul {
+.body>ul {
 	margin: 0 auto;
 	overflow: hidden;
 	padding: 24px 0 0;
 	width: 960px;
 }
 
-#body>ul li {
+.body>ul li {
 	display: block;
 	float: left;
 	margin: 0 10px 20px;
@@ -321,7 +321,7 @@ p {
 	background-color: #000;
 }
 
-#body>ul li div {
+.body>ul li div {
 	color: #000;
 	display: block;
 	font-family: poller_oneregular;
@@ -334,7 +334,7 @@ p {
 	text-transform: uppercase;
 }
 
-#body>ul li div img {
+.body>ul li div img {
 	border: 2px solid #1a1a1a;
 	display: block;
 	margin: 0;
@@ -343,25 +343,25 @@ p {
 	transition: 0.5s ease-in-out;
 }
 
-#body>ul li div:hover img {
+.body>ul li div:hover img {
 	opacity: 1;
 }
 
-#body>ul li div span {
+.body>ul li div span {
 	display: block;
 	margin: 0;
 	padding: 33px 0 0;
 	color: #00eaff;
 }
 
-#body form {
+.body form {
 	margin: 0 auto;
 	padding: 24px 0 0;
 	width: 620px;
 }
 
-#body form input,
-#body form textarea {
+.body form input,
+.body form textarea {
 	border: 2px solid #252525;
 	color: #252525;
 	font-family: Arial, Helvetica, sans-serif;
@@ -374,13 +374,13 @@ p {
 	width: 596px;
 }
 
-#body form textarea {
+.body form textarea {
 	height: 175px;
 	overflow: auto;
 	resize: none;
 }
 
-#body form #send {
+.body form #send {
 	background: #252525;
 	color: #fff;
 	font-family: "Arial Black", Gadget, sans-serif;
@@ -391,7 +391,7 @@ p {
 	width: auto;
 }
 
-#body form #send:hover {
+.body form #send:hover {
 	background: #fff;
 	color: #252525;
 	cursor: pointer;
@@ -752,7 +752,7 @@ main {
 	border-radius: 5px;
 }
 
-#body_login {
+.body_login {
 	width: 100%;
 	height: 100%;
 	margin: 0;
