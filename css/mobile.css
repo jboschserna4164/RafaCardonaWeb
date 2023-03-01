@@ -265,3 +265,13 @@ body {
 	margin-bottom: 6%;
 	position: relative;
 }
+.pokemon-container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 40px;
+	margin-top: 20px;
+  }
