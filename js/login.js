@@ -71,7 +71,7 @@ function compararClave() {
   let html;
 
   if (correo.value == usuario.correo && clave.value == usuario.clave) {
-    window.location.href = "contact.html";
+    window.location.href = "index2.html";
   }
   else {
     alert("Datos incorrectos");
